@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "*", allowedHeaders = "*", allowCredentials = "false")
 @RestController
 @RequestMapping("/api/users")
 public class UserController {
